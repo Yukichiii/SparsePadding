@@ -1,0 +1,7 @@
+numpy
+matplotlib
+scipy
+sklearn
+opencv-python
+plyfile
+trimesh==2.35.39
