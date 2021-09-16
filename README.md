@@ -56,9 +56,9 @@ Then you can train the network which extract features from the voxel at 20cm res
 
 |                               |    Pad   |    Int   |   Sout   |     mIoU       |
 | :---------------------------  | :------: | :------: | :------: | :------------: |
-| `SemanticKITTI_val_MinkUNet`  |   ZERO   |   NEAR   |   58.9   |   61.9 ± 0.3   |
-| `SemanticKITTI_val_MinkUNet`  |   ZERO   |   NEAR   |   60.7   |   61.5 ± 0.3   |
-| `SemanticKITTI_val_MinkUNet`  |  INTERP  |  LINEAR  |   61.5   |   63.9 ± 0.4   |
+| `SemanticKITTI_val_MinkUNet`  |   ZERO   |   NEAR   |   5cm    |   61.9 ± 0.3   |
+| `SemanticKITTI_val_MinkUNet`  |   ZERO   |   NEAR   |   20cm   |   61.5 ± 0.3   |
+| `SemanticKITTI_val_MinkUNet`  |  INTERP  |  LINEAR  |   20cm   |   63.9 ± 0.4   |
 
 
 To preprocess the ScanNet dataset,
