@@ -1,0 +1,4 @@
+model:
+  name: minkunet_low_2_scannet
+  point_wise: 0
+  nearest: True

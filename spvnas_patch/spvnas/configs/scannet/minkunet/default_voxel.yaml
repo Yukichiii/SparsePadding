@@ -1,0 +1,3 @@
+model:
+  name: minkunet_scannet
+  point_wise: 0

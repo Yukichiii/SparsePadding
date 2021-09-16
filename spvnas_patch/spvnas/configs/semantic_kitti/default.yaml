@@ -1,0 +1,41 @@
+data:
+  num_classes: 19
+  ignore_label: 255
+  training_size: 19132
+  in_channels: 4
+
+train:
+  seed: 1588147245
+  deterministic: False
+  eval_epoch: 1
+  save_epoch: 1
+
+dataset:
+  name: semantic_kitti
+  root: path_to_kitti_dataset
+  num_points: 80000
+  voxel_size: 0.05
+  voxel_pad_stride: '0'
+  voxel_pad_method: 'trilinear'
+  submit: False
+
+num_epochs: 15
+batch_size: 1
+
+criterion:
+  name: cross_entropy
+  ignore_index: 255
+
+optimizer:
+  name: sgd
+  lr: 2.4e-1
+  weight_decay: 1.0e-4
+  momentum: 0.9
+  nesterov: true
+
+scheduler:
+  name: cosine_warmup
+
+model:
+  point_wise: 0
+  nearest: True

@@ -1,0 +1,5 @@
+model:
+  name: minkunet
+  point_wise: 0
+dataset:
+  voxel_pad_stride: '1'

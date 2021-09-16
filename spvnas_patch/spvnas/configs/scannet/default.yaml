@@ -1,0 +1,41 @@
+data:
+  num_classes: 20
+  ignore_label: 255
+  training_size: 1201
+  in_channels: 3
+
+train:
+  seed: 1588147245
+  deterministic: False
+  eval_epoch: 20
+  save_epoch: 20
+
+dataset:
+  name: scannet
+  root: path_to_scannet_dataset
+  num_points: 80000
+  voxel_size: 0.02
+  voxel_pad_stride: '0'
+  voxel_pad_method: 'trilinear'
+  submit: False
+
+num_epochs: 600
+batch_size: 1
+
+criterion:
+  name: cross_entropy
+  ignore_index: 255
+
+optimizer:
+  name: sgd
+  lr: 1.0e-1
+  weight_decay: 5.0e-4
+  momentum: 0.9
+  nesterov: true
+
+scheduler:
+  name: poly
+
+model:
+  point_wise: 0
+  nearest: True
