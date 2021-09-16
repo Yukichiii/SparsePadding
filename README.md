@@ -67,6 +67,7 @@ To preprocess the ScanNet dataset,
 - Replace keywords `path_to_scannet_dataset` in the `spvnas/spvnas/configs/scannet/default.yaml` with the path to the processed data, like `/mnt/data/scans_processed`
 
 Then you can train the network which extract features from the voxel at 8cm resolution through commands:
+
     torchpack dist-run -v -np 4 python train.py configs/scannet/minkunet_low_2/default_pad_point.yaml --run-dir logs/scannet_logs/minkunet_8cm_out_tri_pad
 
 
